@@ -6,9 +6,9 @@ public class ClickSystem : MonoBehaviour
 
     void Start() => scoreManager = GetComponent<ScoreManager>();
 
-    public void Click()
+    public void Click(int score)
     {
-        scoreManager.score++;
+        scoreManager.score += score;
         scoreManager.ScoreTextUpdate();
     }
 }

@@ -8,6 +8,8 @@ public class ScoreManager : MonoBehaviour
 
     public int score;
 
+    void Start() => scoreText = GameObject.Find("ScoreText").GetComponent<TMP_Text>();
+
     public void ScoreTextUpdate()
     {
         scoreText.text = score.ToString();
